@@ -1,4 +1,4 @@
-# this short program is an encoder and decoder for a cipher I recieved from a 
+# this short program is an encoder and decoder for a cipher I recieved from a
 # UW-Madison student, and I named the program file accordingly
 #
 # USE RESPONSIBLY!!!
@@ -11,7 +11,7 @@ def main():
         decode()
     else:
         main()
-    quit
+    #quit
 
 def encode():
     inp = input("Enter plaintext: ")
@@ -60,7 +60,7 @@ def encode():
         else:
             outp += inp[c]
     print(outp)
-    quit
+    #quit
 
 def decode():
     inp = input("Enter ciphertext: ")
@@ -114,6 +114,6 @@ def decode():
             outp += inp[c]
             
     print(outp)
-    quit
+    #quit
 
 main()
