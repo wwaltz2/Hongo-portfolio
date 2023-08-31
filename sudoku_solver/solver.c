@@ -20,7 +20,36 @@ void print(int sudoku[9][9]){
     int i,j;
     for(i=0;i<9;i++){
         for(j=0;j<9;j++){
-            printf("%2d", sudoku[i][j]);
+            //printf("%2d", sudoku[i][j]);
+            switch(sudoku[i][j]){
+                case 1:
+                    printf("\x1b[1;31m%2d\x1b[0m",(sudoku[i][j]));
+                    break;
+                case 2:
+                    printf("\x1b[1;32m%2d\x1b[0m",(sudoku[i][j]));
+                    break;
+                case 3:
+                    printf("\x1b[1;33m%2d\x1b[0m",(sudoku[i][j]));
+                    break;
+                case 4:
+                    printf("\x1b[1;34m%2d\x1b[0m",(sudoku[i][j]));
+                    break;
+                case 5:
+                    printf("\x1b[1;35m%2d\x1b[0m",(sudoku[i][j]));
+                    break;    
+                case 6:
+                    printf("\x1b[1;36m%2d\x1b[0m",(sudoku[i][j]));
+                    break;
+                case 7:
+                    printf("\x1b[31m%2d\x1b[0m",(sudoku[i][j]));
+                    break;
+                case 8:
+                    printf("\x1b[32m%2d\x1b[0m",(sudoku[i][j]));
+                    break;
+                case 9:
+                    printf("\x1b[33m%2d\x1b[0m",(sudoku[i][j]));
+                    break;
+            }
         }
         printf("\n");
     }
